@@ -1,0 +1,23 @@
+//Rolan Jay P. Samonte
+//BSCS 1-B
+
+#include <stdio.h>
+
+int main() {
+    int sec;
+    
+    printf("Number of Seconds: ");
+    scanf("%d", &sec);
+    
+    int a = sec / (60*60);
+    int b = sec - (a * (60*60));
+    int c = b / 60;
+    int d = b - (c * 60);
+    
+    printf("%d hours \n", a);
+    printf("%d minutes \n", c);
+    printf("%d seconds", d);
+    
+    
+    return 0;
+}
