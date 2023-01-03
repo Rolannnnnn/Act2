@@ -1,0 +1,23 @@
+//Rolan Jay P. Samonte
+//BSCS 1-B
+
+#include <stdio.h>
+
+int main() {
+    int day;
+    
+    printf("Number of Days: ");
+    scanf("%d", &day);
+    
+    int a = day / 365;
+    int b = day - (a * 365);
+    int c = b / 30;
+    int d = b - (c * 30);
+    
+    printf("%d years \n", a);
+    printf("%d months \n", c);
+    printf("%d days", d);
+    
+    
+    return 0;
+}
