@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float ft, in, cm;
+    
+    printf("Write feet: ");
+    scanf("%f", &ft);
+    printf("Write inches: ");
+    scanf("%f", &in);
+    
+    in += ft*12;
+    cm = in * 2.54;
+    
+    printf("The answer is: %f centimeters.", cm);
+    
+    return 0;
+}
